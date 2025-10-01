@@ -5,8 +5,8 @@ from collections import deque
 
 PORT = ("/dev/ttyUSB0")     # anpassen
 BAUD = 921600
-BURST_SIZE = 512
-NUM_BURSTS = 4
+BURST_SIZE = 1024
+NUM_BURSTS = 16
 
 ser = serial.Serial(PORT, BAUD, timeout=0.1)
 signal = deque(maxlen=BURST_SIZE * NUM_BURSTS)

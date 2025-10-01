@@ -5,8 +5,8 @@
 #include "esp_timer.h"
 
 const int micPin = 34;
-const int BURST_SIZE = 512;
-const uint32_t SAMPLE_PERIOD_US = 1000; // 1000 µs -> 1 kHz
+const int BURST_SIZE = 1024;
+const uint32_t SAMPLE_PERIOD_US = 250; // 1000 µs -> 1 kHz
 
 static uint16_t bufferA[BURST_SIZE];
 static uint16_t bufferB[BURST_SIZE];
