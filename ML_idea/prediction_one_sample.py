@@ -57,7 +57,7 @@ def extract_features(file_path):
 if __name__ == "__main__":
     model = joblib.load("beerpong_model.pkl")
 
-    features = extract_features("ML_idea\\samples_miss_test\\sample_048.wav")
+    features = extract_features("ML_idea\\samples_hit_training\\sample_001.wav")
 
     proba = model.predict_proba([features])[0]
     label = model.classes_[np.argmax(proba)]
